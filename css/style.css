@@ -32,6 +32,7 @@ html, body {
     font-size: 14px;
     font-weight: 500;
     color: #252B42;
+    background: #FAFAFA;
 }
 
 /*-----------------------------------------------------------------*/
@@ -97,6 +98,9 @@ html, body {
     margin: 0 0 0 133px;
 }
 
+.header__menu {
+}
+
 @media (max-width: 992px) {
     .header__menu {
         margin: 0 0 0 80px;
@@ -144,7 +148,7 @@ html, body {
     }
 }
 
-/*-----------Page------------------------------------------------------*/
+/*-----------PAGE------------------------------------------------------*/
 
 .page {
     flex: 1 1 auto;
@@ -159,6 +163,50 @@ html, body {
     margin: -111px 0 0 0;
     /*- Используется отрицательный margin потому что остальные блоки за ним подтянутся.Если использовать другой метод,то будет белая дыра -*/
     z-index: 2;
+}
+
+.page__advantages {
+
+}
+
+.page__practice {
+
+}
+
+/*-----------HEADER-BLOCK------------------------------------------------------*/
+.header-block {
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.header-block__title {
+    color: #252B42;
+    line-height: 142%;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.header-block__title:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
+.header-block__sub-title {
+    color: #737373;
+    line-height: 143%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media (max-width: 992px) {
+    .header-block__title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-block__title {
+        font-size: 30px;
+    }
 }
 
 /*-----------MAIN_BLOCK------------------------------------------------------*/
@@ -200,6 +248,7 @@ html, body {
     line-height: 138%;
     letter-spacing: 0.2px;
 }
+
 
 @media (max-width: 479px) {
     .main-block__title {
@@ -289,6 +338,7 @@ html, body {
 
 
 .services {
+
 }
 
 .services__container {
@@ -380,6 +430,206 @@ html, body {
     font-size: 14px;
     font-weight: 500;
     line-height: 143%;
+
+}
+
+/*-----------ADVANTAGES------------------------------------------------------*/
+
+.advantages {
+    padding: 80px 0;
+}
+
+@media (max-width: 992px) {
+    .advantages {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .advantages {
+        padding: 40px 0;
+    }
+}
+
+.advantages__container {
+}
+
+.advantages__header {
+    margin: 0 0 50px 0;
+}
+
+@media (max-width: 767px) {
+    .advantages__header {
+        margin: 0 0 25px 0;
+    }
+}
+
+.advantages__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px -30px;
+}
+
+.advantages__column {
+    padding: 0 15px;
+    margin: 0 0 30px 0;
+    flex: 0 1 25%;
+}
+
+@media (max-width: 1020px) {
+    .advantages__column {
+        flex: 0 1 50%;
+    }
+
+}
+
+@media (max-width: 560px) {
+    .advantages__column {
+        flex: 0 1 100%;
+    }
+
+}
+
+.advantages__item {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.advantages__item > *:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
+.advantages__icon {
+    height: 48px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /*-----------Выравнивание иконок при их различном размере---------------*/
+}
+
+.advantages__value {
+    color: #252B42;
+    font-size: 40px;
+    line-height: 142%;
+}
+
+.advantages__text {
+    letter-spacing: 0.1px;
+    color: #737373;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+/*-----------PRACTICE------------------------------------------------------*/
+
+
+.practice {
+    padding: 125px 0 80px 0;
+}
+
+@media (max-width: 993px) {
+    .practice {
+        padding: 40px 0 80px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .practice {
+        padding: 0 0 40px 0;
+    }
+}
+
+.practice__container {
+
+}
+
+.practice__header {
+    margin: 0 0 45px 0;
+}
+
+@media (max-width: 767px) {
+    .practice__header {
+        margin: 0 0 25px 0;
+    }
+}
+
+.practice__body {
+    margin: 0 -20px -30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.practice__column {
+    padding: 0 20px;
+    margin: 0 0 30px 0;
+    flex: 0 1 25%;
+}
+
+@media (max-width: 1040px) {
+    .practice__column {
+        flex: 0 1 50%;
+    }
+}
+
+@media (max-width: 630px) {
+    .practice__column {
+        flex: 0 1 100%;
+    }
+}
+
+.practice__item {
+
+
+}
+
+.item-practice {
+    background-color: #fff;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+/*--Выравнивание картинок и текста --*/
+
+.item-practice__content {
+    padding: 30px;
+    flex: 1 1 auto;
+
+}
+
+.item-practice__link {
+    color: inherit;
+    display: inline-block;
+}
+
+.item-practice__link:hover {
+    text-decoration: underline;
+}
+
+/*--Margin в 15px не будет работать т.к .item-practice__link ссылка(строчный объект),поэтому используем display: inline-block; --*/
+.item-practice__link:not(:last-child) {
+    margin: 0 0 15px 0;
+}
+
+.item-practice__title {
+    letter-spacing: 0.1px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.item-practice__text {
+    color: #737373;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 143%;
+}
+
+.item-practice__image {
+    display: block;
+    padding: 0 0 60% 0; /*--(138(высота)/230(ширина)*100%)--*/
 
 }
 
