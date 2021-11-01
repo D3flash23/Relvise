@@ -173,10 +173,22 @@ html, body {
 
 }
 
+.page__whoweare {
+
+}
+
+.page__clients:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
+.page__subscribe {
+
+}
+
 /*-----------HEADER-BLOCK------------------------------------------------------*/
 .header-block {
     text-align: center;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.014285714285714287em;
 }
 
 .header-block__title {
@@ -246,7 +258,7 @@ html, body {
     font-size: 58px;
     font-weight: 800;
     line-height: 138%;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.003448275862068966em;
 }
 
 
@@ -283,7 +295,7 @@ html, body {
     justify-content: center;
     align-items: center;
     padding: 5px 36px;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.014285714285714287em;
     color: #fff;
     text-align: center;
     line-height: 150%; /*-----------(28/14*100)----------------*/
@@ -422,7 +434,7 @@ html, body {
     font-size: 24px;
     font-weight: 700;
     line-height: 133%;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.004166666666666667em;
 }
 
 .item-service__text {
@@ -516,7 +528,7 @@ html, body {
 }
 
 .advantages__text {
-    letter-spacing: 0.1px;
+    letter-spacing: 0.00625em;
     color: #737373;
     font-size: 16px;
     line-height: 150%;
@@ -614,7 +626,7 @@ html, body {
 }
 
 .item-practice__title {
-    letter-spacing: 0.1px;
+    letter-spacing: 0.00625em;
     font-size: 16px;
     font-weight: 700;
     line-height: 150%;
@@ -632,6 +644,335 @@ html, body {
     padding: 0 0 60% 0; /*--(138(высота)/230(ширина)*100%)--*/
 
 }
+
+/*-----------WHOWEARE------------------------------------------------------*/
+
+.whoweare {
+    padding: 80px 0 130px 0;
+    background: #FFF;
+
+}
+
+.whoweare__container {
+
+}
+
+.whoweare__header {
+    margin: 0 0 100px 0;
+}
+
+
+.whoweare__body {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.whoweare__video {
+    flex: 0 0 57%;
+    position: relative;
+    padding: 0 0 42.25% 0; /*---442/1046*100% ---*/
+}
+
+.whoweare__video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.whoweare__content {
+    flex: 1 1 auto;
+    padding: 20px 0 0 121px;
+}
+
+.whoweare__title {
+    color: #252B42;;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 142%;
+    letter-spacing: 0.005em;
+}
+
+
+.whoweare__title:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
+.whoweare__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.014285714285714287em;
+    color: #737373;
+}
+
+.whoweare__top:not(:last-child) {
+    margin: 0 0 50px 0;
+}
+
+.whoweare__items {
+
+
+}
+
+.whoweare__item {
+
+}
+
+.whoweare__item:not(:last-child) {
+    margin: 0 0 30px 0;
+}
+
+.item-whoweare {
+    display: flex;
+}
+
+.item-whoweare__icon {
+    flex: 0 0 32px;
+
+}
+
+.item-whoweare__body {
+    flex: 1 1 auto;
+    padding: 0 0 0 20px;
+
+
+}
+
+.item-whoweare__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.00625em;
+}
+
+.item-whoweare__title:not(:last-child) {
+    margin: 0 0 5px 0;
+}
+
+
+.item-whoweare__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.014285714285714287em;
+    color: #737373;
+    /*----Скрытие длинного текста------*/
+    white-space: nowrap;
+    width: 225px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+@media (max-width: 1080px) {
+    .whoweare__content {
+        padding: 0 0 0 50px;
+    }
+}
+
+@media (max-width: 950px) {
+    .whoweare {
+        padding: 50px 0 50px 0;
+    }
+
+    .whoweare__header {
+        margin: 0 0 30px 0;
+    }
+
+    .whoweare__body {
+        flex-direction: column-reverse;
+        align-items: stretch;
+
+    }
+
+    .whoweare__title {
+        font-size: 24px;
+    }
+
+    .whoweare__content {
+        padding: 0 0 0 0;
+    }
+
+    .whoweare__video {
+        padding: 0 0 56.25% 0;
+    }
+
+    .whoweare__video:not(:last-child) {
+        margin: 50px 0 0 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .whoweare {
+        padding: 20px 0 50px 0;
+    }
+
+    .whoweare__video:not(:last-child) {
+        margin: 30px 0 0 0;
+    }
+
+    .whoweare__top:not(:last-child) {
+        margin: 0 0 30px 0;
+    }
+}
+
+/*-----------CLIENTS(Создавался div,а не section т.к в section нyжно добавлять заголовок)-----------------------*/
+
+
+.clients {
+    padding: 50px 0;
+
+}
+
+.clients__container {
+
+}
+
+.clients__items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .clients {
+        padding: 30px 0;
+
+    }
+}
+
+/*----Сохранение размеров картинок при добавлении новой--------*/
+.clients__item {
+    padding: 8px 15px;
+    flex: 0 1 16.6667%;
+    text-align: center;
+    min-width: 140px;
+
+}
+
+.clients__item img {
+    max-width: 100%;
+}
+
+/*-----------SUBSCRIBE-----------------------------*/
+
+
+.subscribe {
+    position: relative;
+    padding: 0 0 20px 0;
+}
+
+.subscribe:before {
+    content: "";
+    background: #252B42;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 77px;
+
+}
+
+.subscribe__container {
+
+}
+
+.subscribe__body {
+    position: relative;
+    z-index: 2;
+    padding: 30px 50px;
+    align-items: center;
+    background: #17213C;
+    border-radius: 2px;
+}
+
+
+.subscribe__title {
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    letter-spacing: 0.004166666666666667em;
+}
+
+@media (min-width: 1070px) {
+    .subscribe__body {
+        margin: 0 30px;
+    }
+}
+
+@media (min-width: 810px) {
+    .subscribe__body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .subscribe__title {
+        max-width: 266px;
+    }
+
+
+}
+
+@media (max-width: 810px) {
+    .subscribe__title {
+        margin: 0 0 20px 0;
+    }
+
+    .subscribe__body {
+        padding: 20px 15px;
+        margin: 0 -15px;
+    }
+
+    .subscribe__button {
+        padding: 0 15px;
+    }
+
+    .subscribe__input {
+        padding: 0 15px;
+    }
+}
+
+.subscribe__form {
+    flex: 0 1 50%;
+    display: flex;
+    align-items: center;
+}
+
+.subscribe__input {
+    width: 100%;
+    flex: 1 1 auto;
+    min-height: 58px;
+    padding: 0 20px;
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-right: 0;
+    box-sizing: border-box;
+    border-radius: 5px 0 0 5px;
+}
+
+.subscribe__input:focus {
+    color: #000;
+}
+
+.subscribe__button {
+    background: #FF7B47;
+    border: 1px solid #E6E6E6;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    min-height: 58px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 22px;
+}
+
 
 /*-----------ПОДВАЛ------------------------------------------------------*/
 .footer {
